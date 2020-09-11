@@ -1,0 +1,65 @@
+
+*********************GOOD EXAMPLES**********************
+Note: We can get approximately same
+
+m=5,n=2
+# A=np.array([[1,1],[0,1],[1,2],[-1,0],[0,-1]],dtype=float)
+# B=np.array([6,3,9,0,0],dtype=float)
+# C=np.array([2,5],dtype=float)
+# #cost:21, (3,3) 
+
+
+m=7,n=3
+# A=np.array([[2,1,0],[1,2,-2],[0,1,2],[2,2,2],[-1,0,0],[0,-1,0],[0,0,-1]],dtype=float)
+# B=np.array([10,20,5,15,0,0,0],dtype=float)
+# C=np.array([2,-1,2],dtype=float)
+# # # #cost: 15, (5,0,2.5) 
+
+
+m=6,n=2
+# A=np.array([[2,1],[2,3],[3,1],[4,4],[-1,0],[0,-1]],dtype=float)
+# B=np.array([18,42,24,60,0,0],dtype=float)
+# C=np.array([3,2],dtype=float)
+#cost: 33, (3,12) 
+
+
+m=6,n=2
+# A=np.array([[1,1],[-1,-1],[1,0],[0,1],[-1,0],[0,-1]],dtype=float)
+# B=np.array([400,-200,200,300,0,0],dtype=float)
+# C=np.array([6,5],dtype=float)
+#cost: 2200,(200,200), But replace beta value in simplexAlgorithm function with 0.5 , otherwise we may get unbound as our ans for this program
+
+m=7,n=3
+A=np.array([[2,1,1],[2,2,8],[2,3,1],[4,3,9],[-1,0,0],[0,-1,0],[0,0,-1]],dtype=float)
+B=np.array([150,200,320,350,0,0,0],dtype=float)
+C=np.array([3,2,1],dtype=float)
+#250,(50,50,0)
+
+****************************************************************************
+
+*******************************UNBOUND CASES***************************
+#unbound case:
+m=4,n=2
+# A=np.array([[1,-1],[2,-1],[-1,0],[0,-1]],dtype=float)
+# B=np.array([10,40,0,0],dtype=float)
+# C=np.array([2,1],dtype=float)
+
+
+#Unbounded
+m=4,n=2
+# A=np.array([[1,-4],[-2,-1],[-1,0],[0,-1]])
+# B=np.array([-13,-10,0,0])
+# C=np.array([1,1])
+
+*******************************INFEASIBLE CASES****************************
+#infeasible
+m=4,n=2
+A=np.array([[2,3],[4,3],[-1,0],[0,-1]])
+B=np.array([60,-96,0,0])
+C=np.array([40,35])
+
+
+m=4,n=2
+# A=np.array([[1,2],[3,2],[-1,0],[0,-1]])
+# B=np.array([-4,3,0,0])
+# C=np.array([2,5])
