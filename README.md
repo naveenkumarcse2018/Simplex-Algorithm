@@ -1,5 +1,6 @@
+# To run the program
+python3 file_name.py
 
-0. Please find examples in inputs folder
 1.Please refer to the instructions displayed in the beginning of the program (while executing) and follow the input format as mentioned below
 
 Observe the following example and enter the values of matrices
